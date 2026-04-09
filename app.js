@@ -6,7 +6,7 @@
 'use strict';
 
 // ─── Constants ───────────────────────────────────────────────
-const API_URL = '/api/subnets';
+const API_URL = 'https://taostats.io/api/dtao/dtaoSubnets?order=market_cap_desc';
 const REFRESH_INTERVAL_MS = 60_000;
 const FETCH_TIMEOUT_MS = 12_000;
 const RAO = 1e9; // rao → TAO conversion

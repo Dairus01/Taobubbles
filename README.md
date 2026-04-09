@@ -79,13 +79,11 @@ Open `http://127.0.0.1:8081`.
 
 ## API Endpoint
 
-The frontend expects:
+The frontend fetches live data directly from:
 
-- `GET /api/subnets`
-
-This endpoint is proxied by `server.py` or `server.js` to taostats.
+- `https://taostats.io/api/dtao/dtaoSubnets?order=market_cap_desc`
 
 ## Notes
 
 - Some subnet logo files may be missing; this can produce harmless 404s for specific logo paths.
-- Use `server.py` or `server.js` (not plain static hosting) so `/api/subnets` works correctly.
+- This project can be deployed as static hosting (including Vercel) and still fetch live data.
